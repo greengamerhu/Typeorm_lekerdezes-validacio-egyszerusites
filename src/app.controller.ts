@@ -58,7 +58,6 @@ export class AppController {
   }
   @Post('/alkalmazott')
   async newAlkalmazott(@Body() alkalmazott : newAlkalmazott) {
-    
 
   }
 }
