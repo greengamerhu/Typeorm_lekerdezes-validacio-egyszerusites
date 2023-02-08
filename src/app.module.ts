@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import Alkalmazott from './alkamazott.entity';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
@@ -10,9 +11,10 @@ import { AppService } from './app.service';
       host: 'localhost',
       username: 'root',
       password: '',
-      database: 'database',
+      database: 'nest_validacio',
       entities: [
         /* List of entities here */
+        Alkalmazott
       ],
       synchronize: true,
     }),
